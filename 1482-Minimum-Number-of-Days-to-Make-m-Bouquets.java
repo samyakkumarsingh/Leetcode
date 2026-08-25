@@ -25,7 +25,7 @@ class Solution {
         if(m*k>n) return -1;
         while(low<=high){
             int mid=low+(high-low)/2;
-            if(possible(bloomDay,mid,m,k)==true){
+            if(possible(bloomDay,mid,m,k)){
                 ans=mid;
                 high=mid-1;
             }
